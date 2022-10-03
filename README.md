@@ -15,4 +15,4 @@ Demo: [https://interactive-tale.herokuapp.com/](https://interactive-tale.herokua
 - The background music could be dynamically generated based on what's happening in the story
 - Automatic video generation based on the story, when the technology appears (AI filmmaking). This will be cool.
 
-Contributions are appreciated!
+Contributions are appreciated.
