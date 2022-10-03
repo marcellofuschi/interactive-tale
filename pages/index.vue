@@ -19,11 +19,13 @@
                         <div class="sex-selection-container">
                             <button type="button"
                                 @click="isCharacterMale = true"
+                                title="Male"
                                 class="sex-selection-button sex-selection-button--male"
                                 :class="{'sex-selection-button--selected': isCharacterMale}"
                             >M</button>
                             <button type="button"
                                 @click="isCharacterMale = false"
+                                title="Female"
                                 class="sex-selection-button sex-selection-button--female"
                                 :class="{'sex-selection-button--selected': !isCharacterMale}"
                             >F</button>
@@ -61,6 +63,7 @@
                             ></textarea>
 
                             <button type="submit"
+                                title="Let AI continue"
                                 class="story-continuation-submit-button"
                                 :disabled="!inputStoryContinuation"
                             />
@@ -109,6 +112,10 @@ export default {
             if (!started) {
                 this.pauseMusic();
             }
+        },
+
+        isLoadingStoryContinuation: function(isLoading) {
+            document.body.style.cursor = isLoading ? 'wait' : 'initial';
         },
     },
 
