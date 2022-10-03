@@ -7,11 +7,10 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "deploy": "push-dir --dir=.output/public --branch=gh-pages --cleanup"
+    "start": "node .output/server/index.mjs"
   },
   "devDependencies": {
-    "nuxt": "3.0.0-rc.11",
-    "push-dir": "^0.4.1"
+    "nuxt": "3.0.0-rc.11"
   },
   "dependencies": {
     "autosize": "^5.0.1"
