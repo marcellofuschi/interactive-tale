@@ -23,7 +23,7 @@ export default defineEventHandler(async (event) => {
 
     // Make sure it doesnt end mid-sentence.
     let indexOfLastParagraphClosing = continuation.lastIndexOf('\n\n');
-    if (indexOfLastParagraphClosing > 0) {
+    if (indexOfLastParagraphClosing > 100) {
         continuation = continuation.slice(0, indexOfLastParagraphClosing);
     }
 
