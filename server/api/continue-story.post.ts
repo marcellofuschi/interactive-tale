@@ -21,7 +21,7 @@ export default defineEventHandler(async (event) => {
 
     let continuation = everypromptResponse.choices[0].text;
 
-    // Make sure it doesnt end mid-sentence.
+    // Make sure it doesn't end mid-sentence.
     let indexOfLastParagraphClosing = continuation.lastIndexOf('\n\n');
     if (indexOfLastParagraphClosing > 100) {
         continuation = continuation.slice(0, indexOfLastParagraphClosing);
