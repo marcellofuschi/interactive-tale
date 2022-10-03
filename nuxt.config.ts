@@ -2,7 +2,7 @@
 
 export default defineNuxtConfig({
     target: 'static',
-    router: {
-        base: '/interactive-tale/',
+    app: {
+        baseURL: '/interactive-tale/',
     },
 });
