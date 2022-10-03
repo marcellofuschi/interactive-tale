@@ -2,10 +2,14 @@
     <div class="full-page-container" :class="{'full-page-container--dark': gameStarted}">
         <h1>Create a story with the help of AI</h1>
 
+        <a href="https://github.com/marcellofuschi/interactive-tale" target="_blank" class="github-anchor">
+            <img src="/icons/github_logo.png" alt="GitHub repository" style="width:42px;height:42px;">
+        </a>
+
         <div class="central-content">
             <div v-if="!gameStarted">
                 <form @submit.prevent="gameStarted = true" class="initial-form">
-                    <div class="initial-form__fields-contaienr">
+                    <div class="initial-form__fields-container">
                         <input type="text"
                            v-model="characterName"
                            placeholder="Your Name"
@@ -40,7 +44,7 @@
                             {{ storyText }}
                             <template v-if="isLoadingStoryContinuation">
                                 <br><br>
-                                <span style="opacity: .6">Generation...</span>
+                                <span style="opacity: .6">Generating...</span>
                             </template>
                         </p>
 
@@ -196,6 +200,19 @@ h1 {
     background: rgba(0, 0, 0, .8);
 }
 
+.github-anchor {
+    position: absolute;
+    top: 22px;
+    right: calc(52px + 1vw);
+    opacity: .5;
+    transition: opacity .1s;
+}
+
+.github-anchor:hover,
+.github-anchor:focus {
+    opacity: .8;
+}
+
 .central-content {
     display: flex;
     align-items: center;
@@ -210,7 +227,7 @@ h1 {
     align-items: center;
 }
 
-.initial-form__fields-contaienr {
+.initial-form__fields-container {
     display: flex;
     align-items: center;
 }
@@ -250,11 +267,11 @@ h1 {
 }
 
 .sex-selection-button--male {
-    color: #000083;
+    color: #00004b;
 }
 
 .sex-selection-button--female {
-    color: #983763;
+    color: #6e0030;
 }
 
 .sex-selection-button--selected {
