@@ -139,6 +139,8 @@ export default {
                 this.isLoadingStoryContinuation = true;
 
                 await this.continueStoryUsingAI(this.storyText);
+            } catch {
+                alert('An error has occurred while AI was generating the story continuation.');
             } finally {
                 this.isLoadingStoryContinuation = false;
             }
