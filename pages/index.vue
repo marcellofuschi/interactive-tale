@@ -272,7 +272,7 @@ h1 {
     background: none;
     cursor: pointer;
     opacity: .5;
-    transition: opacity .1s;
+    transition: opacity .1s, box-shadow .1s;
 }
 
 .sex-selection-button--male {
@@ -285,6 +285,7 @@ h1 {
 
 .sex-selection-button--selected {
     opacity: 1;
+    box-shadow: inset 0 0 4px 0 #c5c5c5;
 }
 
 .initial-form__start-button {
