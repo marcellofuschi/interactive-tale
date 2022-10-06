@@ -58,7 +58,7 @@
                               v-model.trim="inputStoryContinuation"
                               class="story-continuation-field"
                               rows="1"
-                              placeholder="What happens next?"
+                              placeholder="What happened next?"
                               required
                             ></textarea>
 
