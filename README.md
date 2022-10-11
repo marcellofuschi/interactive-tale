@@ -7,7 +7,7 @@ Demo: [https://interactive-tale.herokuapp.com/](https://interactive-tale.herokua
 ## Missing features & future developments
 
 - Should be made mobile friendly
-- Online multiplayer mode should be added: I write a piece, you write a piece, the AI writes a piece...
+- An online multiplayer mode should be added: I write a piece, you write a piece, the AI writes a piece...
 - Share button for letting other people read your story
 - Other kinds of stories should be made available instead of always the same one
 - OpenAI Whisper could be used for not having to type
