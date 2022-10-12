@@ -306,8 +306,8 @@ h1 {
     transition: background-color .2s;
 }
 
-.start-button:hover,
-.start-button:focus {
+.initial-form__start-button:hover,
+.initial-form__start-button:focus {
     background: #dcdcdc;
 }
 
